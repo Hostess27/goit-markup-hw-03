@@ -38,10 +38,10 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1440px;
+    width: 1600px;
 
-    padding-left: 215px;
-    padding-right: 215px;
+    padding-left: 200px;
+    padding-right: 200px;
 
     outline: 2px solid tomato;
 }
@@ -85,32 +85,48 @@ body {
     margin-bottom: 20px;
 }
 
+.main-nav {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 .site-nav {
     display: flex;
     font-size: 14px;
     line-height: 1.14;
     font-weight: 500;
     letter-spacing: 0.02em;
-}
 
-
-.site-nav .item {
-    margin-right: 50px;
+    margin-left: 93px;
 }
 
 .site-nav .item + .item {
     margin-left: 50px;
 }
-/* .site-nav .item:not(:last-child) {
-    margin-right: 40px;
-} */
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
 }
 .site-nav .link:active,
 .site-nav .link:focus,
 .site-nav .link:hover {
     color: var(--accent-color);
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.auth-nav .item + .item {
+    margin-left: 50px;
 }
 
 .footer {
@@ -189,6 +205,14 @@ body {
     min-width: 200px;
 }
 
+.feature-list {
+    display: flex;
+}
+
+.item-list:not(:last-child) {
+    margin-right: 30px;
+}
+
 .section-title {
     color: var(--title-text-color);
     font-size: 14px;
@@ -197,12 +221,14 @@ body {
 
     margin-top: 0;
     margin-bottom: 10px;
+    min-width: 270px;
 }
 .section-info {
     font-size: 14px;
     line-height: 1.7;
     margin-top: 0;
     margin-bottom: 94px;
+    min-width: 270px;
 }
 
 .section-big {
@@ -234,6 +260,11 @@ body {
 
 /* portfolio.html */
 
+.site-option {
+    display: flex;
+    
+}
+
 .site-option .site-option-button {
     background-color: var(--title-background-color);
     color: var(--title-text-color);
@@ -252,6 +283,14 @@ body {
     background-color: var(--accent-color);
     color: var(--white);
 }
+
+/* .site-combining{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 30px;
+    margin-top: 30px;
+} */
 
 .section-name {
     color: var(--title-text-color);
