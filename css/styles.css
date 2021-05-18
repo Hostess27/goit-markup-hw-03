@@ -32,6 +32,18 @@ body {
 }
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+
+    padding-left: 215px;
+    padding-right: 215px;
+
+    outline: 2px solid tomato;
 }
 .button {
     cursor: pointer;
@@ -39,9 +51,21 @@ body {
     border: none;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    /* background-color: tomato; */
+}
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 /* Шапка и подвал */
 
 .logo {
+    display: inline-block;
     color: var(--title-text-color);
     font-family: raleway;
     font-size: 26px;
@@ -54,6 +78,11 @@ body {
 
 .logo-white {
     color: var(--white);
+}
+
+.logo.logo-footer {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .site-nav {
@@ -73,6 +102,8 @@ body {
 
 .footer {
     background-color: var(--secondary-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .contact {
@@ -101,12 +132,25 @@ body {
 }
 .adds {
     color: var(--white);
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 9px;
 }
-.contact .contact-mail-down {color: var(--white-link);}
+.contact .contact-mail-down {
+    color: var(--white-link);
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 9px;
+
+}
 
 /* index.html */
 .hero {
     background-color: var(--secondary-background-color);
+    text-align: center;
+    margin-bottom: 94px;
+
+    outline: 1px solid tomato;
 }
 
 .hero-title {
@@ -116,6 +160,9 @@ body {
     font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 .hero-button {
     background-color: var(--accent-color);
@@ -124,6 +171,10 @@ body {
     line-height: 1.87;
     font-weight: 700;
     letter-spacing: 0.06em;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
+    min-width: 200px;
 }
 
 .section-title {
@@ -131,26 +182,42 @@ body {
     font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
+
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .section-info {
     font-size: 14px;
     line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 94px;
 }
+
 .section-big {
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.16;
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    text-align: center;
 }
 .section-man {
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.18;
     font-weight: 500;
+
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .section-rang {
     font-size: 16px;
     line-height: 1.18;
+
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 /* portfolio.html */
@@ -162,6 +229,10 @@ body {
     font-size: 16px;
     line-height: 1.62;
     font-weight: 500;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
+    max-width: 145px;
 }
 
 .site-option .site-option-button:hover,
@@ -175,9 +246,15 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    margin-top: 0;
+    margin-bottom: 4px;
 }
 .section-use {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.87;
+
+    margin-top: 0;
+    margin-bottom: 20px;
 }
