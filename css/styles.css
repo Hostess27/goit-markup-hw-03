@@ -86,11 +86,24 @@ body {
 }
 
 .site-nav {
+    display: flex;
     font-size: 14px;
     line-height: 1.14;
     font-weight: 500;
     letter-spacing: 0.02em;
 }
+
+
+.site-nav .item {
+    margin-right: 50px;
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+/* .site-nav .item:not(:last-child) {
+    margin-right: 40px;
+} */
 .site-nav .link {
     color: var(--title-text-color);
 }
@@ -141,7 +154,6 @@ body {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 9px;
-
 }
 
 /* index.html */
